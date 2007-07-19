@@ -1,7 +1,7 @@
 
 %define module	IMDB-Film
 %define name	perl-%{module}
-%define version	0.28
+%define version	0.29
 %define rel	1
 
 Summary:	OO Perl interface to the database of films IMDB
@@ -11,7 +11,7 @@ Release:	%mkrel %{rel}
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source0:	http://search.cpan.org/CPAN/authors/id/S/ST/STEPANOV/%{module}-%{version}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/S/ST/STEPANOV/%{module}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 BuildArch:	noarch
 
