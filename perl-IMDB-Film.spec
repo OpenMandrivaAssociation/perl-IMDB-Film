@@ -12,6 +12,7 @@ License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
 Source0:	http://search.cpan.org/CPAN/authors/id/S/ST/STEPANOV/%{module}-%{version}.tar.gz
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 BuildArch:	noarch
 
 %description
