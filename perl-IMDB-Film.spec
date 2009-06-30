@@ -1,7 +1,7 @@
 
 %define module	IMDB-Film
 %define name	perl-%{module}
-%define version	0.34
+%define version	0.37
 %define rel	1
 
 Summary:	OO Perl interface to the database of films IMDB
