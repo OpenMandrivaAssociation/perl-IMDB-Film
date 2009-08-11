@@ -1,19 +1,18 @@
+%define upstream_name	 IMDB-Film
+%define upstream_version 0.41
 
-%define module	IMDB-Film
-%define name	perl-%{module}
-%define version	0.40
-%define rel	1
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	OO Perl interface to the database of films IMDB
-Name:		%{name}
-Version:	%{version}
-Release:	%mkrel %{rel}
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source0:	http://search.cpan.org/CPAN/authors/id/S/ST/STEPANOV/%{module}-%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/S/ST/STEPANOV/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 IMDB::Film is OO Perl interface to the database of films
@@ -23,7 +22,7 @@ possibility to get information about IMDB persons (actors,
 actresses, directors etc) by their name of code.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor < /dev/null
