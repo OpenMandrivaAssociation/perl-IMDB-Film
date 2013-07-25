@@ -1,15 +1,15 @@
 %define upstream_name IMDB-Film
-%define upstream_version 0.52
+%define upstream_version 0.53
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.53
+Release:	1
 
 Summary:	OO Perl interface to the database of films IMDB
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/S/ST/STEPANOV/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/S/ST/STEPANOV/IMDB-Film-0.53.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Cache::FileCache)
@@ -121,4 +121,5 @@ perl Makefile.PL INSTALLDIRS=vendor < /dev/null
 * Sun Apr 29 2007 Anssi Hannula <anssi@mandriva.org> 0.27-1mdv2008.0
 + Revision: 19142
 - Import perl-IMDB-Film
+
 
