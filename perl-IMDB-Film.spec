@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.53
-Release:	2
+Release:	3
 
 Summary:	OO Perl interface to the database of films IMDB
 License:	GPL+ or Artistic
