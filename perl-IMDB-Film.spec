@@ -8,7 +8,7 @@ Release:	3
 Summary:	OO Perl interface to the database of films IMDB
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/authors/id/S/ST/STEPANOV/IMDB-Film-0.53.tar.gz
 
 BuildRequires:	perl-devel
