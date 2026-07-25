@@ -2,14 +2,14 @@
 %define upstream_version 0.53
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.53
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	OO Perl interface to the database of films IMDB
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/authors/id/S/ST/STEPANOV/IMDB-Film-0.53.tar.gz
+Url:		https://metacpan.org/dist/IMDB-Film
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEPANOV/IMDB-Film-0.53.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
